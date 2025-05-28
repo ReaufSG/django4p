@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "learning_logs/base.html" %}
+
+{% block content %}
+  <h1>Learning Log</h1>
+  <p>Welcome to the Learning Log application!</p>
+  <p>
+    <a href="{% url 'learning_logs:topics' %}">View Topics</a>
+  </p>
+{% endblock %}
